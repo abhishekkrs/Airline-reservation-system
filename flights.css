@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Keep vertical alignment to center */
+    min-height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1363568665/photo/white-empty-screen-on-smartphone-with-touching-finger-and-airplane-model-toy-on-blue.jpg?s=612x612&w=0&k=20&c=WMypfNss4NKxV1Rt2U8HkvcvVu8pMmZ8VDWHM2GfFvU=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0; /* Adjust this to control spacing from the left side */
+    margin-left: 20px; /* Add margin to the left to keep the container slightly off the edge */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#searchResults {
+    border: 1px solid #ccc;
+    padding: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Reservation</title>
+    <link rel="stylesheet" href="flights.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FLY HIGH AIRLINES</h1>
+        <h2>Book Your Flight</h2>
+        <form id="bookingForm">
+            <div>
+                <label>
+                    <input type="radio" id="oneWayRadio" name="tripType" value="oneWay" checked>
+                    One Way
+                </label>
+                <label>
+                    <input type="radio" id="roundTripRadio" name="tripType" value="roundTrip">
+                    Round Trip
+                </label>
+            </div>
+
+            <div id="returnDateField" style="display: none;">
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate"><br>
+            </div>
+
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate" name="departureDate" required><br>
+
+            <label for="sourceAirport">From:</label>
+            <input type="text" id="sourceAirport" name="sourceAirport" list="airportList" required><br>
+            <datalist id="airportList">
+                <option value="JFK - New York">
+                <option value="LAX - Los Angeles">
+                <option value="ORD - Chicago">
+                <option value="DFW - Dallas/Fort Worth">
+                <option value="DEN - Denver">
+                <option value="SFO - San Francisco">
+                <option value="SEA - Seattle">
+                <option value="ATL - Atlanta">
+                <option value="CDG - Paris">
+                <option value="HND - Tokyo">
+            </datalist>
+
+            <label for="destinationAirport">To:</label>
+            <input type="text" id="destinationAirport" name="destinationAirport" list="airportList" required><br>
+
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="10" required><br>
+
+            <button type="submit">Search Flights</button>
+        </form>
+        <div id="bookingResults"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
